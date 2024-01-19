@@ -10,18 +10,16 @@ const App = () => {
   ];
 
   return (
-    <div className="container">
-      <div className="calculator-grid">
-        <div className="screen">
-          <div className="previous-operation">123 *</div>
-          <div className="current-operation">17</div>
-        </div>
-        {btnList.flat().map((btn, index) => (
-          <button key={index} className={btn === "0" ? "span-2" : ""}>
-            {btn}
-          </button>
-        ))}
+    <div className="calculator-grid">
+      <div className="screen">
+        <div className="previous-operation">123 *</div>
+        <div className="current-operation">17</div>
       </div>
+      {btnList.flat().map((btn, index) => (
+        <button key={index} className={btn === "0" ? "span-2" : ""}>
+          {btn}
+        </button>
+      ))}
     </div>
   );
 };
